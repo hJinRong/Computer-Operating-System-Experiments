@@ -83,7 +83,7 @@ void LRU() {
 	int i = 0;  //待入数组索引
 	int p = 0;  //存储块对垒索引
 	int absence = 0;
-	bool in_pages=false;
+	bool in_pages = NULL;
 	cout << endl << "----------------------------------------------------" << endl;
 	cout << "LRU调度算法，页面调出流:";
 	for (i = 0; i < NUM; i++) {
@@ -102,33 +102,39 @@ void LRU() {
 	//前三填充完毕
 	for (i = NUM; i < quantity; i++) {
 		for (int j = 0; j < NUM; j++) {
-			while (pages[j].loaded == queue[i]) {
+			if (pages[j].loaded == queue[i]) {
 				pages[j].time = 0;
-				in_pages==true;
+				in_pages = true;
+				for (int k = 0; k < NUM; k++) {
+					if (k != j) {
+						pages[k].time--;
+					}
+				}
+				break;
 			}
 		}
-		if (in_pages == true) {
+		if (in_pages == false) {
 			int farthest_time = 0;
 			int pre_exchange_index = 0;
 			for (int j = 0; j < NUM; j++) {
 				if (pages[j].time < farthest_time) {
 					farthest_time = pages[j].time;
 					pre_exchange_index = j;
-					absence++;
 				}
 			}
+			absence++;
+			cout << pages[pre_exchange_index].loaded << " ";
 			pages[pre_exchange_index].loaded = queue[i];
 			pages[pre_exchange_index].time = 0;
 			for (int j = 0; j < NUM; j++) {
-				while (j != pre_exchange_index) {
+				if (j != pre_exchange_index) {
 					pages[j].time--;
-					break;
 				}
 			}
-			in_pages=false;
 		}
+		in_pages = NULL;  //为true时运行到此后要更改值，否则后面恒为true
 	}
-	cout << "缺页中断次数 " << absence << endl;
+	cout << endl << "缺页中断次数 " << absence << endl;
 }
 
 void main() {

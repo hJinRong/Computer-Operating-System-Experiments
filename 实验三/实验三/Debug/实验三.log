@@ -3,6 +3,5 @@ E:\计算机操作系统实验\实验三\实验三\VirtualPageManagement.cpp(36,
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): message :  参见“fopen”的声明
 E:\计算机操作系统实验\实验三\实验三\VirtualPageManagement.cpp(40,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1197): message :  参见“fscanf”的声明
-E:\计算机操作系统实验\实验三\实验三\VirtualPageManagement.cpp(107,13): warning C4553:  “==”: 未使用表达式结果；是否打算使用“=”?
-E:\计算机操作系统实验\实验三\实验三\VirtualPageManagement.cpp(134,13): warning C4326:  “main”的返回类型应为“int”而非“void”
+E:\计算机操作系统实验\实验三\实验三\VirtualPageManagement.cpp(140,13): warning C4326:  “main”的返回类型应为“int”而非“void”
   实验三.vcxproj -> E:\计算机操作系统实验\实验三\Debug\实验三.exe
