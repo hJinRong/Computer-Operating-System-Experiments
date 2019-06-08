@@ -29,10 +29,10 @@ void initial() {
 //读入页面流
 void readData() {
 	FILE* fp;
-	char fname[20];
+	char fname[20] = "3.txt";
 	int i;
 	cout << "请输入页面流文件名:";
-	cin >> fname;
+	//cin >> fname;
 	if ((fp = fopen(fname, "r")) == NULL) {
 		cout << "错误,文件打不开,请检查文件名";
 	} else {
@@ -80,15 +80,61 @@ void FIFO() {
 
 //最近最少使用调度算法（LRU）
 void LRU() {
-
-	//请补充LRU算法的代码
+	int i = 0;  //待入数组索引
+	int p = 0;  //存储块对垒索引
+	int absence = 0;
+	bool in_pages=false;
+	cout << endl << "----------------------------------------------------" << endl;
+	cout << "LRU调度算法，页面调出流:";
+	for (i = 0; i < NUM; i++) {
+		pages[p].loaded = queue[i];
+		pages[p].time = 0;
+		if (p == 1) {
+			pages[p - 1].time--;
+		}
+		if (p == 2) {
+			pages[p - 1].time--;
+			pages[p - 2].time--;
+		}
+		p = (p + 1) % NUM;  //此时最大为2
+	}
+	absence = 3;
+	//前三填充完毕
+	for (i = NUM; i < quantity; i++) {
+		for (int j = 0; j < NUM; j++) {
+			while (pages[j].loaded == queue[i]) {
+				pages[j].time = 0;
+				in_pages==true;
+			}
+		}
+		if (in_pages == true) {
+			int farthest_time = 0;
+			int pre_exchange_index = 0;
+			for (int j = 0; j < NUM; j++) {
+				if (pages[j].time < farthest_time) {
+					farthest_time = pages[j].time;
+					pre_exchange_index = j;
+					absence++;
+				}
+			}
+			pages[pre_exchange_index].loaded = queue[i];
+			pages[pre_exchange_index].time = 0;
+			for (int j = 0; j < NUM; j++) {
+				while (j != pre_exchange_index) {
+					pages[j].time--;
+					break;
+				}
+			}
+			in_pages=false;
+		}
+	}
+	cout << "缺页中断次数 " << absence << endl;
 }
-
 
 void main() {
 	cout << "     /**********虚拟存储管理器的页面调度**************/" << endl;
 	initial();
 	readData();
-	FIFO();
-	// LRU();
+	//FIFO();
+	LRU();
 }
