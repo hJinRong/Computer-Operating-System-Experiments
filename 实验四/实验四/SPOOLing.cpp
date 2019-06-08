@@ -124,7 +124,27 @@ void request(int i) {
 }
 
 void spooling() {
-	//请完成spooling函数的设计
+	if (UsedReqBlockNum !=0 ) {
+		//取数据--打印
+		PCB[0].length=0;
+		PCB[0].status=4;
+		PCB[1].length = 0;
+		PCB[1].status = 4;
+		if (ReqBlock[0].addr!=0) {
+			ReqBlock[0].reqid=0;
+		}
+		if (ReqBlock[1].addr != 0) {
+			ReqBlock[1].reqid = 0;
+		}
+	} else {
+		if (sizeof(OutBuffer[0].buf)==0 && sizeof(OutBuffer[1].buf) == 0) {
+			PCB[3].status=4;
+		} else {
+			PCB[3].status=2;
+		}
+	}
+
+	return;
 }
 
 void work()//模拟进程调度 
