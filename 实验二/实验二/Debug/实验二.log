@@ -1,22 +1,22 @@
 ﻿  BankersAlgorithm.cpp
 E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(34,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): message :  参见“fopen”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(39,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(38,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1197): message :  参见“fscanf”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(43,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(41,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1197): message :  参见“fscanf”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(53,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(50,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): message :  参见“fopen”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(58,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(54,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1197): message :  参见“fscanf”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(61,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(57,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1197): message :  参见“fscanf”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(69,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(64,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): message :  参见“fopen”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(76,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(70,1): warning C4996:  'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1197): message :  参见“fscanf”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(139,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(125,1): warning C4996:  'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): message :  参见“fopen”的声明
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(209,1): warning C4326:  “main”的返回类型应为“int”而非“void”
-E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(209,1): warning C4326: E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(170) : error C4716: “Test_Safty”: 必须返回一个值
-D:\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(429,5): error MSB6006: “CL.exe”已退出，代码为 2。
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(233,13): warning C4326:  “main”的返回类型应为“int”而非“void”
+E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(233,13): warning C4326: E:\计算机操作系统实验\实验二\实验二\BankersAlgorithm.cpp(198) : warning C4715: “Test_Safty”: 不是所有的控件路径都返回值
+  实验二.vcxproj -> E:\计算机操作系统实验\实验二\Debug\实验二.exe
